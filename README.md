@@ -64,6 +64,8 @@ TOKEN_URI=данные для авторизации в google api
 AUTH_PROVIDER_X509_CERT_URL=данные для авторизации в google api
 CLIENT_X509_CERT_URL=данные для авторизации в google api
 EMAIL=эл.почта google аккаунта пользователя, имеющего доступ к отчету
+SPREADSHEET_REPORT_TITLE=Отчет по закрытым проектам QRkot
+SPREADSHEET_SHEET_TYPE=GRID
 ```
 
 Применить миграции командой:
