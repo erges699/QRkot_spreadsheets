@@ -15,7 +15,7 @@ async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
     spreadsheet_body = {
         'properties': {'title': settings.spreadsheet_report_title,
                        'locale': 'ru_RU'},
-        'sheets': [{'properties': {'sheetType': settings.spreadsheet_sheet_id,
+        'sheets': [{'properties': {'sheetType': settings.spreadsheet_sheet_type,
                                    'sheetId': 0,
                                    'title': 'Лист1',
                                    'gridProperties': {'rowCount': 100,
