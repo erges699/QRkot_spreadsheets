@@ -13,9 +13,9 @@ async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
     now_date_time = dt.now().strftime(FORMAT)
     service = await wrapper_services.discover('sheets', 'v4')
     spreadsheet_body = {
-        'properties': {'title': f'Отчет по проектам на {now_date_time}',
+        'properties': {'title': settings.spreadsheet_report_title,
                        'locale': 'ru_RU'},
-        'sheets': [{'properties': {'sheetType': 'GRID',
+        'sheets': [{'properties': {'sheetType': settings.spreadsheet_sheet_id,
                                    'sheetId': 0,
                                    'title': 'Лист1',
                                    'gridProperties': {'rowCount': 100,
@@ -25,12 +25,12 @@ async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
     response = await wrapper_services.as_service_account(
         service.spreadsheets.create(json=spreadsheet_body)
     )
-    spreadsheetid = response['spreadsheetId']
+    spreadsheet_id = response['spreadsheetId']
     return spreadsheetid
 
 
 async def set_user_permissions(
-        spreadsheetid: str,
+        spreadsheet_id: str,
         wrapper_services: Aiogoogle
 ) -> None:
     permissions_body = {'type': 'user',
@@ -39,7 +39,7 @@ async def set_user_permissions(
     service = await wrapper_services.discover('drive', 'v3')
     await wrapper_services.as_service_account(
         service.permissions.create(
-            fileId=spreadsheetid,
+            fileId=spreadsheet_id,
             json=permissions_body,
             fields="id"
         ))
@@ -67,7 +67,7 @@ async def spreadsheets_update_value(
         'values': table_values
     }
     rows_count = len(update_body['values'])
-    _ = await wrapper_services.as_service_account(
+    await wrapper_services.as_service_account(
         service.spreadsheets.values.update(
             spreadsheetId=spreadsheetid,
             range=f'A1:C{rows_count}',
