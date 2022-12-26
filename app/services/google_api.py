@@ -13,7 +13,7 @@ async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
     now_date_time = dt.now().strftime(FORMAT)
     service = await wrapper_services.discover('sheets', 'v4')
     spreadsheet_body = {
-        'properties': {'title': settings.spreadsheet_report_title,
+        'properties': {'title': f'{settings.spreadsheet_report_title} {now_date_time}',
                        'locale': 'ru_RU'},
         'sheets': [{'properties': {'sheetType': settings.spreadsheet_sheet_type,
                                    'sheetId': 0,
@@ -26,7 +26,7 @@ async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
         service.spreadsheets.create(json=spreadsheet_body)
     )
     spreadsheet_id = response['spreadsheetId']
-    return spreadsheetid
+    return spreadsheet_id
 
 
 async def set_user_permissions(
