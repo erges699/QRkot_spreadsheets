@@ -25,7 +25,7 @@ git clone
 ```
 
 ```
-cd cat_charity_fund
+cd QRkot_spreadsheets
 ```
 
 Cоздать и активировать виртуальное окружение:
