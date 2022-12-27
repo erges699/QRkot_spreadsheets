@@ -5,6 +5,7 @@ from aiogoogle import Aiogoogle
 
 from app.core.config import settings
 from app.models import CharityProject
+from app.services import constants as const
 
 FORMAT = "%Y/%m/%d %H:%M:%S"
 
@@ -12,14 +13,10 @@ FORMAT = "%Y/%m/%d %H:%M:%S"
 async def spreadsheets_create(wrapper_services: Aiogoogle) -> str:
     now_date_time = dt.now().strftime(FORMAT)
     service = await wrapper_services.discover('sheets', 'v4')
-    spreadsheet_body = {
-        'properties': {'title': f'{settings.spreadsheet_report_title} {now_date_time}',
-                       'locale': 'ru_RU'},
-        'sheets': [{'properties': {'sheetType': settings.spreadsheet_sheet_type,
-                                   'sheetId': 0,
-                                   'title': 'Лист1',
-                                   'gridProperties': {'rowCount': 100,
-                                                      'columnCount': 4}}}]
+    spreadsheet_body = { 
+            'properties': {'title': f'{const.SPREDSHEET_REPORT_TITLE} {now_date_time}', 
+                           'locale': const.SPREDSHEET_REPORT_LOCALE}, 
+            'sheets': [{'properties': const.SPREDSHEET_SHEET_PROPERTIES}] 
     }
 
     response = await wrapper_services.as_service_account(
