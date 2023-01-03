@@ -4,11 +4,11 @@
 
 Использованы следующие технологии и пакеты:
 <p align="left"> 
-<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
-<a href="https://www.sqlalchemy.org/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/sqlalchemy/sqlalchemy-original.svg" alt="sqlalchemy" width="40" height="40"/> </a>
-<a href="https://fastapi.tiangolo.com/" target="_blank" rel="noreferrer"><img src="https://github.com/devicons/devicon/blob/master/icons/fastapi/fastapi-original.svg" alt="fastapi" width="40" height="40"/> </a>
-<a href="https://github.com/sqlalchemy/alembic" target="_blank" rel="noreferrer"><img src="https://github.com/awkward/Alembic/blob/master/Docs/icon.png" alt="alembic" width="40" height="40"/> </a>
-<a href="https://github.com/fastapi-users/fastapi-users" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/fastapi-users/fastapi-users/master/logo.svg" alt="fastapi-users" width="40" height="40"/> </a>
+<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"> </a>
+<a href="https://www.sqlalchemy.org/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/sqlalchemy/sqlalchemy-original.svg" alt="sqlalchemy" width="40" height="40"> </a>
+<a href="https://fastapi.tiangolo.com/" target="_blank" rel="noreferrer"><img src="https://github.com/devicons/devicon/blob/master/icons/fastapi/fastapi-original.svg" alt="fastapi" width="40" height="40"> </a>
+<a href="https://github.com/sqlalchemy/alembic" target="_blank" rel="noreferrer"><img src="https://github.com/awkward/Alembic/blob/master/Docs/icon.png" alt="alembic" width="40" height="40"> </a>
+<a href="https://github.com/fastapi-users/fastapi-users" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/fastapi-users/fastapi-users/master/logo.svg" alt="fastapi-users"> </a>
 </p>
 
 <h3 align="left">Описание:</h3>
