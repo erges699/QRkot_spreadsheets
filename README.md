@@ -8,7 +8,7 @@
 <a href="https://www.sqlalchemy.org/" target="_blank" rel="noreferrer"> <img src="https://github.com/devicons/devicon/blob/master/icons/sqlalchemy/sqlalchemy-original.svg" alt="sqlalchemy" width="40" height="40"> </a>
 <a href="https://fastapi.tiangolo.com/" target="_blank" rel="noreferrer"><img src="https://github.com/devicons/devicon/blob/master/icons/fastapi/fastapi-original.svg" alt="fastapi" width="40" height="40"> </a>
 <a href="https://github.com/sqlalchemy/alembic" target="_blank" rel="noreferrer"><img src="https://github.com/awkward/Alembic/blob/master/Docs/icon.png" alt="alembic" width="40" height="40"> </a>
-<a href="https://github.com/fastapi-users/fastapi-users" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/fastapi-users/fastapi-users/master/logo.svg" alt="fastapi-users" width="80" height="40"> </a>
+<a href="https://github.com/fastapi-users/fastapi-users" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/fastapi-users/fastapi-users/master/logo.svg" alt="fastapi-users" width="120" height="40"> </a>
 </p>
 
 <h3 align="left">Описание:</h3>
